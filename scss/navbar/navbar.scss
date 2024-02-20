@@ -1,0 +1,66 @@
+nav {
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: -1px 2px 18px -7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 2px 18px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 2px 18px -7px rgba(0,0,0,0.75);
+}
+
+.nav-logo {
+  img {
+    width: 10rem;
+    height: auto;
+  }
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 400;
+}
+
+.row-nav {
+  width: 100%;
+}
+
+.button-navbar {
+  padding: 0.5rem 1rem;
+  border: unset;
+  color: $color-tertiary;
+  z-index: 1;
+  background: $color-primary;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.button-navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: $color-tertiary;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.button-navbar:hover {
+  color: $color-primary;
+}
+
+.button-navbar:hover::before {
+  width: 100%;
+}
