@@ -1,0 +1,32 @@
+.cards-sc3 {
+  img {
+    width: 4rem;
+    height: auto;
+  }
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: $color-primary;
+  }
+  p {
+    text-wrap: balance;
+  }
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.52);
+}
+
+.sc3-info {
+  text-wrap: balance;
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2.75rem;
+    span {
+      color: $color-primary;
+      font-weight: 700;
+      font-size: 3rem;
+    }
+  }
+}

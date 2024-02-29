@@ -1,31 +1,36 @@
 .seccion2 {
+  height: 55vh;
+  .cards {
     height: 55vh;
-    .cards {
-        height: 55vh;
-        background-color: #3b3b3b;
-        border-color: #ffffff;
-        border-width: 0 0.2rem 0 0;
-        border-style: solid;
+    background-color: #3b3b3b;
+    border-color: #ffffff;
+    border-width: 0 0.2rem 0 0;
+    border-style: solid;
+    transition: all ease 0.15s;
+    &:hover {
+      background-color: $color-primary;
+      transition: all ease 0.15s;
     }
-    .cardsmd {
-        border-width: 0 0.2rem 0 0.2rem;
-    }
-    .cardsend {
-        border-width: 0 0 0 0.2rem;
-    }
-    .card-logo {
-        height: 2rem;
-        width: auto;    
-    }
-    p {
-        color: $color-tertiary;
-        font-size: 1.75rem;
-        font-family: 'Montserrat', sans-serif;
-
-    }
-    .card-info {
-        font-size: 1.1rem;
-        font-family: akzidenz;
-    }
-
+  }
+  .cardsmd {
+    border-width: 0 0.2rem 0 0.2rem;
+  }
+  .cardsend {
+    border-width: 0 0 0 0.2rem;
+  }
+  .card-logo {
+    height: 2rem;
+    width: auto;
+  }
+  p {
+    color: $color-tertiary;
+    font-size: 1.75rem;
+    font-family: "Montserrat", sans-serif;
+    cursor: default;
+  }
+  .card-info {
+    font-size: 1.1rem;
+    font-family: akzidenz;
+    cursor: default;
+  }
 }

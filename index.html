@@ -17,25 +17,53 @@
     <nav class="navbar navbar-expand-lg position-sticky top-0">
       <div class="container-fluid py-2">
         <div class="row row-nav">
-          <div class="col-3">
-            <a class="navbar-brand nav-logo" href="#"
-              ><img src="./img/LOGO.png" alt="Xilco"
-            /></a>
+          <div class="col-3 d-flex align-items-center justify-content-center">
+            <a
+              class="navbar-brand nav-logo d-flex align-items-center position-relative"
+              href="#"
+              ><img src="./img/LOGO.png" alt="Xilco" />
+              <div class="position-absolute init-animate end-0"></div
+            ></a>
           </div>
-          <div class="col-6">
+          <div class="col-6 d-flex justify-content-center">
             <div
               class="collapse navbar-collapse d-flex justify-content-center"
               id="navbarNavAltMarkup"
             >
               <div class="navbar-nav gap-4">
-                <a class="nav-link" href="#">Sobre nosotros</a>
-                <a class="nav-link" href="#">Enfoque</a>
-                <a class="nav-link" href="#">Sección 3</a>
-                <a class="nav-link" href="#">Sección 4</a>
+                <a class="nav-link d-flex align-items-center" href="#"
+                  >Sobre nosotros</a
+                >
+                <li class="nav-item dropdown a-biocaps">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Marcas
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-custom">
+                    <li class="p-2">
+                      <a
+                        class="dropdown-item d-flex justify-content-center align-items-center"
+                        href="#"
+                        ><img src="./img/logo-biocaps.png" alt="BioCaps"
+                      /></a>
+                    </li>
+                  </ul>
+                </li>
+                <a class="nav-link d-flex align-items-center" href="#"
+                  >Valores</a
+                >
+                <a class="nav-link d-flex align-items-center" href="#"
+                  >Contacto</a
+                >
               </div>
             </div>
           </div>
-          <div class="col-3 d-flex align-items-center justify-content-end">
+          <div class="col-3 d-flex align-items-center justify-content-center">
             <button
               class="navbar-toggler"
               type="button"
@@ -53,71 +81,216 @@
       </div>
     </nav>
 
-
     <div class="container-fluid home">
       <div class="row">
-        <div class="col-6 order-2 welcome d-flex flex-column justify-content-center align-items-center gap-4">
+        <div
+          class="col-6 order-2 welcome d-flex flex-column justify-content-center align-items-center gap-4"
+        >
           <h2>Construimos el futuro.</h2>
-          <p>En Xilco nos destacamos por nuestro enfoque integral basado en la producción, distribución y representación como agente importador de marcas internacionales en el mercado argentino. Nuestra ubicación nos sitúa estratégicamente, facilitando conexiones efectivas con usuarios y clientes.</p>
-          <button class="learn-more">
-            <span class="circle" aria-hidden="true">
-            <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Saber más</span>
-          </button>
+          <p>
+            En Xilco nos destacamos por nuestro enfoque integral basado en la
+            producción, distribución y representación como agente importador de
+            marcas internacionales en el mercado argentino. Nuestra ubicación
+            nos sitúa estratégicamente, facilitando conexiones efectivas con
+            usuarios y clientes.
+          </p>
+          <div class="down-btn"></div>
         </div>
-        <div class="col-6 order-1 welcome-image">
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container seccion1 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center flex-column align-items-center">
-          <p>Xilco es una empresa comprometida en establecer relaciones con clientes, que generen un impacto positivo ya sea en las personas como en el medio que nos rodea. Nos enorgullece actuar como agente productor y/o distribuidor, encargados de hacer llegar productos de calidad en el mercado local.</p>
-          <a class="btn" href="#">Contáctanos</a>
+        <div class="col-6 order-1 welcome-image position-relative p-0">
+          <!-- <video
+            src="./img/home.mp4"
+            autoplay="true"
+            muted="true"
+            loop="true"
+          ></video> -->
+          <div class="position-absolute"></div>
         </div>
       </div>
     </div>
-
+    <div class="pass-1">
+      <div
+        class="container seccion1 d-flex justify-content-center align-items-center"
+      >
+        <div class="row">
+          <div
+            class="col-12 d-flex justify-content-center flex-column align-items-center"
+          >
+            <p>
+              Xilco es una empresa comprometida en establecer relaciones con
+              clientes, que generen un impacto positivo ya sea en las personas
+              como en el medio que nos rodea. Nos enorgullece actuar como agente
+              productor y/o distribuidor, encargados de hacer llegar productos
+              de calidad en el mercado local.
+            </p>
+            <a class="btn" href="#">Contáctanos</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container-fluid seccion2">
       <div class="row">
-        <div class="col-4 cards p-5 d-flex flex-column align-items-center justify-content-between">
-            <div class="col-12 d-flex align-items-center gap-4">
-              <img src="./img/factory-5-svgrepo-com.svg" alt="producción" class="card-logo">
-              <p class="m-0">PRODUCCIÓN</p>
-            </div>
-            <div class="col-12">
-              <p class="card-info">Desarrollamos productos de calidad para satisfacer las demandas del mercado argentino, garantizando estándares superiores en cada etapa.</p>
-            </div>
-            <div class="col-12">
-              
-            </div>
-        </div>
-        <div class="col-4 cards cardsmd p-5 d-flex flex-column align-items-center justify-content-between">
+        <div
+          class="col-4 cards p-5 d-flex flex-column align-items-center justify-content-between"
+        >
           <div class="col-12 d-flex align-items-center gap-4">
-            <img src="./img/packages-package-svgrepo-com.svg" alt="producción" class="card-logo">
+            <img
+              src="./img/factory-5-svgrepo-com.svg"
+              alt="producción"
+              class="card-logo"
+            />
+            <p class="m-0">PRODUCCIÓN</p>
+          </div>
+          <div class="col-12">
+            <p class="card-info">
+              Nos enfocamos en desarrollar productos de alta calidad que cumplen
+              con las demandas del mercado, manteniendo los estándares en cada
+              fase del proceso.
+            </p>
+          </div>
+          <div class="col-12"></div>
+        </div>
+        <div
+          class="col-4 cards cardsmd p-5 d-flex flex-column align-items-center justify-content-between"
+        >
+          <div class="col-12 d-flex align-items-center gap-4">
+            <img
+              src="./img/packages-package-svgrepo-com.svg"
+              alt="producción"
+              class="card-logo"
+            />
             <p class="m-0">DISTRIBUCIÓN</p>
           </div>
           <div class="col-12">
-            <p class="card-info">Gestionamos eficientemente la cadena de suministro para llevar los productos directamente a los puntos de venta, asegurando una presencia efectiva en todo el país. La ubicación que nos da proximidad, nos permite entender las necesidades del mercado y brindar un servicio ágil y personalizado.</p>
+            <p class="card-info">
+              Administramos eficientemente la cadena de suministro, asegurando
+              una presencia efectiva y capitalizando nuestra ubicación
+              estratégica, para ofrecer un servicio ágil y personalizado.
+            </p>
           </div>
-          <div class="col-12">
-
-          </div>
+          <div class="col-12"></div>
         </div>
-        <div class="col-4 cards cardsend p-5 d-flex flex-column align-items-center justify-content-between">
+        <div
+          class="col-4 cards cardsend p-5 d-flex flex-column align-items-center justify-content-between"
+        >
           <div class="col-12 d-flex align-items-center gap-4">
-            <img src="./img/strategy-svgrepo-com.svg" alt="producción" class="card-logo">
+            <img
+              src="./img/strategy-svgrepo-com.svg"
+              alt="producción"
+              class="card-logo"
+            />
             <p class="m-0">REPRESENTACIÓN</p>
           </div>
           <div class="col-12">
-            <p class="card-info">Actuamos como un puente entre marcas y el público argentino, posicionando los productos de manera estratégica en el mercado.</p>
+            <p class="card-info">
+              Actuamos como intermediarios entre las marcas y los consumidores,
+              posicionando cuidadosamente los productos en el mercado para
+              maximizar su impacto y aceptación.
+            </p>
           </div>
-          <div class="col-12">
+          <div class="col-12"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container seccion3 py-5 my-5 z-2">
+      <div class="row">
+        <div class="col-7 order-2">
+          <div class="row d-flex justify-content-center gap-5">
+            <div
+              class="col-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                src="./img/handshake-deal-svgrepo-com (1).svg"
+                alt="Integridad"
+              />
+              <h3>Integridad</h3>
+              <p class="text-center">
+                Nos distinguimos por nuestro valores y compromiso tanto con
+                proveedores como clientes.
+              </p>
+            </div>
+            <div
+              class="col-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="./img/idea-svgrepo-com.svg" alt="Innovación" />
+              <h3>Innovación</h3>
+              <p class="text-center">
+                Es un pilar para poder ofrecer excelencia en productos y
+                servicios a largo plazo.
+              </p>
+            </div>
+            <div
+              class="col-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="./img/like-svgrepo-com.svg" alt="Servicio" />
+              <h3>Servicio</h3>
+              <p class="text-center">
+                Nos enfocamos en la mejora continua para ser líderes y crecer en
+                cada categoría.
+              </p>
+            </div>
+            <div
+              class="col-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="./img/recycle-2-svgrepo-com.svg" alt="Medio ambiente" />
+              <h3>Ambiente</h3>
+              <p class="text-center">
+                Promovemos prácticas sostenibles, con el compromiso de cuidar el
+                planeta.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-5 d-flex flex-column justify-content-center gap-5 sc3-info order-1"
+        >
+          <h4 class="text-center">
+            Diferenciarnos por <span>Nuestros Valores.</span>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="seccion1 pass-2 position-relative">
+      <div class="position-absolute"></div>
+    </div>
+    <div class="container contact">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-6">
+          <form
+            action=""
+            class="form d-flex flex-column justify-content-center align-items-center py-4 px-5 gap-3 mt-5"
+          >
+            <div class="d-flex iw-custom gap-3">
+              <div class="input-wrapper">
+                <input
+                  class="input-box"
+                  type="text"
+                  placeholder="Nombre y Apellido"
+                />
+                <span class="underline"></span>
+              </div>
+              <div class="input-wrapper">
+                <input class="input-box" type="email" placeholder="E-Mail" />
+                <span class="underline"></span>
+              </div>
+            </div>
 
-          </div>
+            <div class="input-wrapper">
+              <input class="input-box" type="text" placeholder="Asunto" />
+              <span class="underline"></span>
+            </div>
+
+            <textarea
+              class="contact-message my-3"
+              type="text"
+              name="message"
+              required
+              placeholder="Su mensaje"
+            ></textarea>
+
+            <button>
+              <a href="#" class="submit"><span>ENVIAR</span></a>
+            </button>
+          </form>
         </div>
       </div>
     </div>

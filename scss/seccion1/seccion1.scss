@@ -1,7 +1,10 @@
 .seccion1 {
-  height: 55vh;
+  height: 45vh;
 }
 
+.seccion1-2 {
+  background-color: $color-tertiary;
+}
 
 .btn {
   display: inline-block;
@@ -40,4 +43,16 @@
 
 .btn:hover::before {
   transform: translateX(0);
+}
+
+.pass-2 {
+  background-image: url("../img/pass-2.jpg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  div {
+    height: 100%;
+    width: 100%;
+    background-color: $color-primary;
+    opacity: 85%;
+  }
 }
