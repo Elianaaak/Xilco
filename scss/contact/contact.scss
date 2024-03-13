@@ -108,5 +108,17 @@ button {
 }
 
 .contact {
-  height: 100vh;
+
+  h4 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+  }
+  span {
+    color: $color-primary;
+    font-weight: bold;
+  }
 }

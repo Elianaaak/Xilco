@@ -2,7 +2,7 @@
   height: 55vh;
   .cards {
     height: 55vh;
-    background-color: #3b3b3b;
+    background-color: #4d4d4d;
     border-color: #ffffff;
     border-width: 0 0.2rem 0 0;
     border-style: solid;
@@ -10,6 +10,14 @@
     &:hover {
       background-color: $color-primary;
       transition: all ease 0.15s;
+      .card-logo {
+        display: none;
+        opacity: 0%;
+      }
+      .card-logo-after {
+        display: block;
+        opacity: 100%;
+      }
     }
   }
   .cardsmd {
@@ -21,6 +29,14 @@
   .card-logo {
     height: 2rem;
     width: auto;
+    transition: all ease 0.15s;
+  }
+  .card-logo-after {
+    height: 2rem;
+    width: auto;
+    opacity: 0%;
+    display: none;
+    transition: all ease 0.15s;
   }
   p {
     color: $color-tertiary;

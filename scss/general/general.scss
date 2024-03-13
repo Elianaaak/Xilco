@@ -36,8 +36,8 @@ h5 {
 }
 
 @font-face {
-    font-family: akzidenz;
-    src: url(../fonts/AkzidenzGrotesk-Light.otf);
+  font-family: akzidenz;
+  src: url(../fonts/AkzidenzGrotesk-Light.otf);
 }
 
 p {
@@ -49,3 +49,16 @@ p {
   }
 }
 
+.backgronud-protection {
+  background-color: #fff;
+}
+
+.footer {
+  background-color: $color-primary;
+  overflow: hidden;
+  p{
+    color: #fff;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+}
