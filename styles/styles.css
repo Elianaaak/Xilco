@@ -281,7 +281,7 @@ nav {
     display: block;
     opacity: 100%; }
   .seccion2 .cards:hover {
-    background-color: #4d4d4d;
+    background-color: #6d6d6d;
     transition: all ease 0.15s; }
     .seccion2 .cards:hover .card-logo {
       display: block;
