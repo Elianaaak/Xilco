@@ -1,30 +1,65 @@
 .seccion2 {
-  height: 55vh;
   .cards {
     height: 55vh;
-    background-color: #4d4d4d;
+    // background-color: #4d4d4d;
+    // border-color: #ffffff;
+    // border-style: solid;
+    // border-width: 0rem 0rem 0.3rem;
+    // transition: all ease 0.15s;
+    // &:hover {
+    //   background-color: $color-primary;
+    //   transition: all ease 0.15s;
+    //   .card-logo {
+    //     display: none;
+    //     opacity: 0%;
+    //   }
+    //   .card-logo-after {
+    //     display: block;
+    //     opacity: 100%;
+    //   }
+    // }
+    //
+
     border-color: #ffffff;
-    border-width: 0 0.2rem 0 0;
     border-style: solid;
+   border-width: 0rem 0rem 0.3rem;
+   background-color: $color-primary;
+   transition: all ease 0.15s;
+   .card-logo {
+     display: none;
+     opacity: 0%;
+   }
+   .card-logo-after {
+     display: block;
+     opacity: 100%;
+   }
+   &:hover {
+    background-color: #4d4d4d;
     transition: all ease 0.15s;
-    &:hover {
-      background-color: $color-primary;
-      transition: all ease 0.15s;
-      .card-logo {
-        display: none;
-        opacity: 0%;
-      }
-      .card-logo-after {
-        display: block;
-        opacity: 100%;
-      }
+    .card-logo {
+      display: block;
+      opacity: 100%;
+    }
+    .card-logo-after {
+      display: none;
+      opacity: 0%;
+    }
+   }
+
+    //
+    @include min-992 {
+      border-width: 0 0.2rem 0 0;
     }
   }
   .cardsmd {
-    border-width: 0 0.2rem 0 0.2rem;
+    @include min-992 {
+      border-width: 0 0.2rem 0 0.2rem;
+    }
   }
   .cardsend {
-    border-width: 0 0 0 0.2rem;
+    @include min-992 {
+      border-width: 0 0 0 0.2rem;
+    }
   }
   .card-logo {
     height: 2rem;
@@ -40,7 +75,10 @@
   }
   p {
     color: $color-tertiary;
-    font-size: 1.75rem;
+    font-size: 1.35rem;
+    @include min-992 {
+      font-size: 1.75rem;
+    }
     font-family: "Montserrat", sans-serif;
     cursor: default;
   }

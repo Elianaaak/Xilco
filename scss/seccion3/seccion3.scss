@@ -22,11 +22,17 @@
   h4 {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 2.75rem;
+    font-size: 1.8rem;
+    @include min-992 {
+      font-size: 2.75rem;
+    }
     span {
       color: $color-primary;
       font-weight: 700;
-      font-size: 3rem;
+      font-size: 2rem;
+      @include min-992 {
+        font-size: 3rem;
+      }
     }
   }
 }

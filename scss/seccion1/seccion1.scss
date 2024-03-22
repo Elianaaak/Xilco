@@ -46,9 +46,10 @@
 }
 
 .pass-2 {
-  background-image: url("../img/pass-2.jpg.png");
+  background-image: url("../img/pass-2.png");
   background-size: cover;
   background-attachment: fixed;
+  height: 35vh;
   div {
     height: 100%;
     width: 100%;
@@ -59,6 +60,8 @@
     opacity: 100%;
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.25rem;
+    @include min-992 {
+      letter-spacing: 0.25rem;
+    }
   }
 }

@@ -108,14 +108,19 @@ button {
 }
 
 .contact {
-
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    @include min-992 {
+      font-size: 1.4rem;
+    }
     font-family: "Montserrat", sans-serif;
   }
   p {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    @include min-992 {
+      font-size: 1.3rem;
+    }
   }
   span {
     color: $color-primary;

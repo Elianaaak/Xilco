@@ -6,7 +6,10 @@
   .welcome {
     h2 {
       color: $color-tertiary;
-      font-size: 3rem;
+      font-size: 1.65rem;
+      @include min-992 {
+        font-size: 3rem;
+      }
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       z-index: 4;
@@ -18,15 +21,24 @@
       font-family: "Montserrat", sans-serif;
       font-weight: 400;
       z-index: 4;
-      width: 45rem;
+      width: 90%;
       text-align: center;
+      font-size: 0.85rem;
+      text-wrap: balance;
+      @include min-992 {
+        width: 45rem;
+        font-size: 1.1rem;
+      }
     }
   }
 
   .home-video {
-    width: 120%;
-    z-index: -1;
+    object-fit: cover;
     position: fixed;
+    z-index: -1;
+    @include min-992 {
+      width: 120%;
+    }
   }
   .cover {
     background-color: $color-primary;
