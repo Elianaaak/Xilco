@@ -108,6 +108,10 @@ button {
 }
 
 .contact {
+  h3 {
+    font-size: 3rem;
+    color: $color-primary;
+  }
   h4 {
     font-size: 1.35rem;
     @include min-992 {

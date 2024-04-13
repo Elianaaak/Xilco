@@ -1,25 +1,6 @@
 .seccion2 {
   .cards {
     height: 55vh;
-    // background-color: #4d4d4d;
-    // border-color: #ffffff;
-    // border-style: solid;
-    // border-width: 0rem 0rem 0.3rem;
-    // transition: all ease 0.15s;
-    // &:hover {
-    //   background-color: $color-primary;
-    //   transition: all ease 0.15s;
-    //   .card-logo {
-    //     display: none;
-    //     opacity: 0%;
-    //   }
-    //   .card-logo-after {
-    //     display: block;
-    //     opacity: 100%;
-    //   }
-    // }
-    //
-
     border-color: #ffffff;
     border-style: solid;
     border-width: 0rem 0rem 0.3rem;
@@ -87,4 +68,110 @@
     font-family: akzidenz;
     cursor: default;
   }
+}
+
+$bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #709646;
+
+.accordion {
+  .accordion-item {
+    border-bottom: 1px solid $lightgray;
+    background-color: $color-primary;
+    button[aria-expanded="true"] {
+      border-bottom: 1px solid $blue;
+    }
+  }
+  button {
+    position: relative;
+    display: block;
+    text-align: start;
+    width: 100%;
+    padding: 1em 0;
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $blue;
+      &::after {
+        cursor: pointer;
+        color: $blue;
+        border: 1px solid $blue;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded="true"] {
+    color: white;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 20em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    p {
+      font-size: 0.87rem;
+      font-weight: 300;
+      margin: 2em 0;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+    }
+  }
+}
+
+.card-logo-mobile {
+  height: 2rem;
 }

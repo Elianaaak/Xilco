@@ -64,8 +64,8 @@ nav {
   -moz-box-shadow: -1px 2px 18px -7px rgba(0, 0, 0, 0.75); }
 
 .nav-logo img {
-  width: 10rem;
-  height: auto; }
+  height: auto;
+  width: 10rem; }
 
 .nav-link {
   font-family: "Montserrat", sans-serif;
@@ -75,6 +75,9 @@ nav {
 
 .row-nav {
   width: 100%; }
+
+.offcanvas-custom {
+  transition: all 0.2s ease; }
 
 .button-navbar {
   padding: 0.5rem 1rem;
@@ -249,24 +252,6 @@ nav {
 .btn:hover::before {
   transform: translateX(0); }
 
-.pass-2 {
-  background-image: url("../img/pass-2.png");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 35vh; }
-  .pass-2 div {
-    height: 100%;
-    width: 100%;
-    background-color: #1e39ff;
-    opacity: 85%; }
-  .pass-2 h3 {
-    opacity: 100%;
-    color: #fff;
-    font-family: "Montserrat", sans-serif; }
-    @media (min-width: 992px) {
-      .pass-2 h3 {
-        letter-spacing: 0.25rem; } }
-
 .seccion2 .cards {
   height: 55vh;
   border-color: #ffffff;
@@ -326,6 +311,89 @@ nav {
   font-size: 1.1rem;
   font-family: akzidenz;
   cursor: default; }
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #1e39ff; }
+  .accordion .accordion-item button[aria-expanded="true"] {
+    border-bottom: 1px solid #709646; }
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: start;
+  width: 100%;
+  padding: 1em 0;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none; }
+  .accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: #709646; }
+    .accordion button:hover::after, .accordion button:focus::after {
+      cursor: pointer;
+      color: #709646;
+      border: 1px solid #709646; }
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+    font-family: "Montserrat", sans-serif;
+    color: #fff; }
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px; }
+    .accordion button .icon::before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 9px;
+      left: 5px;
+      width: 10px;
+      height: 2px;
+      background: currentColor; }
+    .accordion button .icon::after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: 9px;
+      width: 2px;
+      height: 10px;
+      background: currentColor; }
+
+.accordion button[aria-expanded="true"] {
+  color: white; }
+  .accordion button[aria-expanded="true"] .icon::after {
+    width: 0; }
+  .accordion button[aria-expanded="true"] + .accordion-content {
+    opacity: 1;
+    max-height: 20em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height; }
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height; }
+  .accordion .accordion-content p {
+    font-size: 0.87rem;
+    font-weight: 300;
+    margin: 2em 0;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff; }
+
+.card-logo-mobile {
+  height: 2rem; }
 
 .cards-sc3 {
   border-radius: 15px;
@@ -452,6 +520,10 @@ button {
   text-decoration: none;
   background-color: #fff;
   border: none; }
+
+.contact h3 {
+  font-size: 3rem;
+  color: #1e39ff; }
 
 .contact h4 {
   font-size: 1.35rem;

@@ -45,23 +45,4 @@
   transform: translateX(0);
 }
 
-.pass-2 {
-  background-image: url("../img/pass-2.png");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 35vh;
-  div {
-    height: 100%;
-    width: 100%;
-    background-color: $color-primary;
-    opacity: 85%;
-  }
-  h3 {
-    opacity: 100%;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    @include min-992 {
-      letter-spacing: 0.25rem;
-    }
-  }
-}
+
