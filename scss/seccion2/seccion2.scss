@@ -1,57 +1,27 @@
 .seccion2 {
+  .sc2-title {
+    color: $color-primary;
+    font-weight: 600;
+  }
   .cards {
     height: 55vh;
-    border-color: #ffffff;
+    width: 30%;
+    border-color: $color-primary;
     border-style: solid;
-    border-width: 0rem 0rem 0.3rem;
-    background-color: $color-primary;
+    border-radius: 15px;
+    border-width: 2px;
     transition: all ease 0.15s;
     .card-logo {
-      display: none;
-      opacity: 0%;
-    }
-    .card-logo-after {
       display: block;
       opacity: 100%;
     }
-    &:hover {
-      background-color: #6d6d6d;
-      transition: all ease 0.15s;
-      .card-logo {
-        display: block;
-        opacity: 100%;
-      }
-      .card-logo-after {
-        display: none;
-        opacity: 0%;
-      }
-    }
-
-    //
-    @include min-992 {
-      border-width: 0 0.2rem 0 0;
-    }
-  }
-  .cardsmd {
-    @include min-992 {
-      border-width: 0 0.2rem 0 0.2rem;
-    }
-  }
-  .cardsend {
-    @include min-992 {
-      border-width: 0 0 0 0.2rem;
-    }
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.52);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.52);
   }
   .card-logo {
     height: 2rem;
     width: auto;
-    transition: all ease 0.15s;
-  }
-  .card-logo-after {
-    height: 2rem;
-    width: auto;
-    opacity: 0%;
-    display: none;
     transition: all ease 0.15s;
   }
   p {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="overflow-x-hidden">
     <nav
@@ -174,10 +175,6 @@
             En Xilco nos destacamos por nuestro enfoque integral basado en la
             producción, distribución y representación como agente importador de
             marcas internacionales en el mercado argentino.
-            <span class="d-none d-lg-block"
-              >Nuestra ubicación nos sitúa estratégicamente, facilitando
-              conexiones efectivas con usuarios y clientes.</span
-            >
           </p>
           <a
             class="down-btn my-4 position-absolute"
@@ -188,33 +185,13 @@
         </div>
       </div>
     </div>
-    <div class="backgronud-protection">
-      <div class="pass-1 py-5 py-lg-0">
-        <div
-          class="container seccion1 d-flex justify-content-center align-items-center"
-        >
-          <div class="row">
-            <div
-              class="col-12 d-flex justify-content-center flex-column align-items-center gap-4 py-lg-0"
-            >
-              <p>
-                Xilco es una empresa comprometida en establecer relaciones con
-                clientes, que generen un impacto positivo ya sea en las personas
-                como en el medio que nos rodea. Nos enorgullece actuar como
-                agente productor y/o distribuidor, encargados de hacer llegar
-                productos de calidad en el mercado local.
-              </p>
-              <button class="button-navbar" id="sobre-nosotros">
-                Más Información
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <div class="background-protection">
       <div class="container-fluid seccion2 d-none d-sm-block">
-        <div class="row">
-          <div
+         <h2 class="text-center py-5 sc2-title">Nuestros Pilares</h2> 
+        <div class="row justify-content-evenly">
+          <!-- ESTOS SON LAS CARDS NORMALES -->
+
+          <!-- <div
             class="col-12 col-lg-4 cards p-4 p-lg-5 d-flex flex-column align-items-center justify-content-between"
           >
             <div class="col-12 d-flex align-items-center gap-4">
@@ -290,32 +267,125 @@
             <div class="col-12"></div>
           </div>
         </div>
+      </div> -->
+
+          <!-- ESTAS LAS MODIFICADAS PARA EL BOCETO B Transferir a css los styles si se confirma esta. ALGUNOS CSS´S ESTAN MODEADOS TAMBIEN IGUAL-->
+
+          <div
+            class="m-1 cards p-4 p-lg-5 d-flex flex-column align-items-center justify-content-between" data-aos="fade-up" data-aos-offset="350" data-aos-once="true"
+          >
+            <div class="col-12 d-flex align-items-center gap-4">
+              <img
+                src="./img/item-1-before.svg"
+                alt="producción"
+                class="card-logo"
+              />
+              <p class="m-0" style="color: #1e39ff">PRODUCCIÓN</p>
+            </div>
+            <div class="col-12">
+              <p class="card-info" style="color: #000">
+                Nos enfocamos en desarrollar productos de alta calidad que
+                cumplen con las demandas del mercado, manteniendo los estándares
+                en cada fase del proceso.
+              </p>
+            </div>
+            <div class="col-12"></div>
+          </div>
+          <div
+            class="m-1 cards p-4 p-lg-5 d-flex flex-column align-items-center justify-content-between" data-aos="fade-up" data-aos-delay="300" data-aos-offset="350" data-aos-once="true"
+          >
+            <div class="col-12 d-flex align-items-center gap-4">
+              <img
+                src="./img/item-2-before.svg"
+                alt="producción"
+                class="card-logo"
+              />
+              <p class="m-0" style="color: #1e39ff">DISTRIBUCIÓN</p>
+            </div>
+            <div class="col-12">
+              <p class="card-info" style="color: #000;" >
+                Administramos eficientemente la cadena de suministro, asegurando
+                una presencia efectiva y capitalizando nuestra ubicación
+                estratégica, para ofrecer un servicio ágil y personalizado.
+              </p>
+            </div>
+            <div class="col-12"></div>
+          </div>
+          <div
+            class="m-1 cards p-4 p-lg-5 d-flex flex-column align-items-center justify-content-between" data-aos="fade-up" data-aos-delay="600" data-aos-offset="350" data-aos-once="true"
+          >
+            <div class="col-12 d-flex align-items-center gap-4">
+              <img
+                src="./img/item-3-before.svg"
+                alt="producción"
+                class="card-logo"
+              />
+              <p class="m-0" style="color: #1e39ff">REPRESENTACIÓN</p>
+            </div>
+            <div class="col-12">
+              <p class="card-info" id="valores" style="color: #000">
+                Actuamos como intermediarios entre las marcas y los
+                consumidores, posicionando cuidadosamente los productos en el
+                mercado para maximizar su impacto y aceptación.
+              </p>
+            </div>
+            <div class="col-12"></div>
+          </div>
+        </div>
       </div>
 
-      <div class="container-fluid px-0 d-sm-none">
+      <div class="container-fluid px-0 pt-2 d-sm-none">
+        <h2 class="text-center py-5 sc2-title">Nuestros Pilares</h2> 
         <div class="accordion">
           <div class="accordion-item">
-            <button id="accordion-button-1" aria-expanded="false"><img src="./img/item-1.svg" alt="PRODUCCION" class="card-logo-mobile mx-4"><span class="accordion-title">PRODUCCIÓN</span><span class="icon me-4" aria-hidden="true" ></span></button>
+            <button id="accordion-button-1" aria-expanded="false">
+              <img
+                src="./img/item-1.svg"
+                alt="PRODUCCION"
+                class="card-logo-mobile mx-4"
+              /><span class="accordion-title">PRODUCCIÓN</span
+              ><span class="icon me-4" aria-hidden="true"></span>
+            </button>
             <div class="accordion-content px-3">
-              <p>                                 Nos enfocamos en desarrollar productos de alta calidad que
+              <p>
+                Nos enfocamos en desarrollar productos de alta calidad que
                 cumplen con las demandas del mercado, manteniendo los estándares
-                en cada fase del proceso.</p>
+                en cada fase del proceso.
+              </p>
             </div>
           </div>
           <div class="accordion-item">
-            <button id="accordion-button-2" aria-expanded="false"><img src="./img/item-2.svg" alt="PRODUCCION" class="card-logo-mobile mx-4"><span class="accordion-title">DISTRIBUCIÓN</span><span class="icon me-4" aria-hidden="true" ></span></button>
+            <button id="accordion-button-2" aria-expanded="false">
+              <img
+                src="./img/item-2.svg"
+                alt="PRODUCCION"
+                class="card-logo-mobile mx-4"
+              /><span class="accordion-title">DISTRIBUCIÓN</span
+              ><span class="icon me-4" aria-hidden="true"></span>
+            </button>
             <div class="accordion-content px-3">
-              <p>                                  Administramos eficientemente la cadena de suministro, asegurando
+              <p>
+                Administramos eficientemente la cadena de suministro, asegurando
                 una presencia efectiva y capitalizando nuestra ubicación
-                estratégica, para ofrecer un servicio ágil y personalizado.</p>
+                estratégica, para ofrecer un servicio ágil y personalizado.
+              </p>
             </div>
           </div>
           <div class="accordion-item">
-            <button id="accordion-button-3" aria-expanded="false"><img src="./img/item-3.svg" alt="PRODUCCION" class="card-logo-mobile mx-4"><span class="accordion-title">REPRESENTACIÓN</span><span class="icon me-4" aria-hidden="true" ></span></button>
+            <button id="accordion-button-3" aria-expanded="false">
+              <img
+                src="./img/item-3.svg"
+                alt="PRODUCCION"
+                class="card-logo-mobile mx-4"
+              /><span class="accordion-title">REPRESENTACIÓN</span
+              ><span class="icon me-4" aria-hidden="true"></span>
+            </button>
             <div class="accordion-content px-3">
-              <p>                                 Actuamos como intermediarios entre las marcas y los
+              <p>
+                Actuamos como intermediarios entre las marcas y los
                 consumidores, posicionando cuidadosamente los productos en el
-                mercado para maximizar su impacto y aceptación.</p>
+                mercado para maximizar su impacto y aceptación.
+              </p>
             </div>
           </div>
         </div>
@@ -326,7 +396,7 @@
           <div class="col-12 col-lg-7 order-2">
             <div class="row d-flex justify-content-center gap-5">
               <div
-                class="col-11 col-lg-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center"
+                class="col-11 col-lg-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center" data-aos="fade-left" data-aos-duration="800" data-aos-offset="350" data-aos-once="true"
               >
                 <img
                   src="./img/handshake-deal-svgrepo-com (1).svg"
@@ -334,12 +404,12 @@
                 />
                 <h3>Integridad</h3>
                 <p class="text-center">
-                  Nos distinguimos por nuestro valores y compromiso tanto con
+                  Nos distinguimos por nuestros valores y compromiso tanto con
                   proveedores como clientes.
                 </p>
               </div>
               <div
-                class="col-11 col-lg-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center"
+                class="col-11 col-lg-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center" data-aos="fade-left" data-aos-duration="800" data-aos-offset="350" data-aos-once="true"
               >
                 <img src="./img/idea-svgrepo-com.svg" alt="Innovación" />
                 <h3>Innovación</h3>
@@ -349,7 +419,7 @@
                 </p>
               </div>
               <div
-                class="col-11 col-lg-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center"
+                class="col-11 col-lg-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center" data-aos="fade-left" data-aos-duration="800" data-aos-offset="350" data-aos-once="true"
               >
                 <img src="./img/like-svgrepo-com.svg" alt="Servicio" />
                 <h3>Servicio</h3>
@@ -359,7 +429,7 @@
                 </p>
               </div>
               <div
-                class="col-11 col-lg-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center"
+                class="col-11 col-lg-5 cards-sc3 py-3 d-flex flex-column align-items-center justify-content-center" data-aos="fade-left" data-aos-duration="800" data-aos-offset="350" data-aos-once="true"
               >
                 <img
                   src="./img/recycle-2-svgrepo-com.svg"
@@ -374,44 +444,24 @@
             </div>
           </div>
           <div
-            class="col-12 col-lg-5 d-flex flex-column justify-content-center gap-5 sc3-info order-1"
+            class="col-12 col-lg-5 d-flex flex-column justify-content-center gap-5 sc3-info order-1" data-aos="fade-right" data-aos-duration="900" data-aos-offset="350" data-aos-once="true"
           >
             <h4 class="text-center mb-5 mb-lg-0">
-              Diferenciarnos por <span>Nuestros Valores.</span>
+              Nos diferenciamos por <span>Nuestros Valores.</span>
             </h4>
           </div>
         </div>
       </div>
 
       <div class="container contact">
-        <h3 class="text-center mb-1">Contáctanos</h3>
         <div class="row d-flex justify-content-center align-items-center">
           <div class="col-12 col-lg-6 order-2">
             <form
               action=""
               class="form d-flex flex-column justify-content-center align-items-center p-4 py-lg-4 px-lg-5 gap-3 my-5"
             >
-              <div class="d-flex iw-custom gap-3">
-                <div class="input-wrapper">
-                  <input
-                    class="input-box"
-                    type="text"
-                    placeholder="Nombre y Apellido"
-                  />
-                  <span class="underline"></span>
-                </div>
-                <div class="input-wrapper d-none d-lg-block">
-                  <input class="input-box" type="email" placeholder="E-Mail" />
-                  <span class="underline"></span>
-                </div>
-              </div>
-              <div class="input-wrapper d-lg-none">
-                <input class="input-box" type="email" placeholder="E-Mail" />
-                <span class="underline"></span>
-              </div>
-
               <div class="input-wrapper">
-                <input class="input-box" type="text" placeholder="Asunto" />
+                <input class="input-box" type="email" placeholder="E-Mail" />
                 <span class="underline"></span>
               </div>
 
@@ -431,20 +481,9 @@
           <div
             class="col-12 col-lg-6 order-1 gap-4 d-flex flex-column justify-content-center mt-5 mt-lg-0"
           >
-            <h4 class="mb-3">
-              Ante cualquier duda, no dudes en <span>consultar</span>
-            </h4>
+          <h3 class="mb-1">Contáctanos</h3>
             <p class="mb-0">
-              <span style="font-weight: bold">✉️ Mail: </span>
-              Info@Xilco.com.ar
-            </p>
-            <p class="mb-0">
-              <span style="font-weight: bold">📞 Teléfono: </span>
-              +54 9 11 3873-6434
-            </p>
-            <p class="mb-0">
-              <span style="font-weight: bold">📌 Dirección: </span>
-              Tapalqué 5130/32, Buenos Aires, Argentina
+              Ponete en contacto con nosotros
             </p>
           </div>
         </div>
@@ -452,6 +491,10 @@
     </div>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./script/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
   <footer id="contacto" class="container-fluid">
     <div
